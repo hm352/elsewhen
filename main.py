@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 
 def join_zips_and_plans():
+    ''' merge together the datasets for zipcodes and insurance plans
+    '''
     plans = pd.read_csv('plans.csv')
     zips = pd.read_csv('zips.csv')
     zip_rates= pd.merge(zips, plans, on=['state', 'rate_area'])

@@ -6,7 +6,6 @@ from main import find_rate_area, join_zips_and_plans
 zip_rates = join_zips_and_plans()
 
 def test_zip_code_one_county_one_rate():
-    '''this should not return anything as there are no other'''
     slcsp = find_rate_area(99363)
     assert slcsp is None
 
