@@ -33,6 +33,9 @@ first column. Fill in the second column with the rate (see below) of the
 corresponding SLCSP and emit the answer on `stdout` using the same CSV format as
 the input. Write your code in your best programming language.
 
+### how to run
+`$ python main.py`
+
 ### Testing
 
 For all things test driven, please refer to the /tests subfolder. Have utilised pytest as my test framework due to familiarity and ease of use. To run these unit tests run the following command in the root directory:

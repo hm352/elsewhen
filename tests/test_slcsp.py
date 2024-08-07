@@ -1,5 +1,4 @@
-''' Functions for loading and transforming all the plan and zipcode data
-
+''' tests for loading and transforming all the plan and zipcode data
 '''
 from main import find_rate_area, join_zips_and_plans
 
