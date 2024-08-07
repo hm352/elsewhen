@@ -21,10 +21,12 @@ def find_rate_area(zipcode):
         return np.sort(zipcode['rate'].unique())[1]
 
 if __name__ == '__main__':
+    # read in csv
     with open('slcsp.csv') as csvfile:
         data = csv.reader(csvfile)
+        # drop headers
         next(data)
-        for line in data:
-            zipcode = line[0]
-            slcsp = find_rate_area(zipcode)
-            print(zipcode, slcsp)
+        zipcodes = [line[0] for line in data]
+        results = map(find_rate_area, zipcodes)
+        for line in zip(zipcodes, results):
+            print(line)
